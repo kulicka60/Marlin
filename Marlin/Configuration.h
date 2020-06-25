@@ -489,9 +489,14 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   //Metalka E0 Chimera 24V
-  #define DEFAULT_Kp 18.85
-  #define DEFAULT_Ki  1.56
-  #define DEFAULT_Kd 56.91 
+  #define DEFAULT_Kp  8.79
+  #define DEFAULT_Ki  0.41
+  #define DEFAULT_Kd 47.49 
+
+  //Metalka E1 Chimera 24V
+  //#define DEFAULT_Kp  9.92
+  //#define DEFAULT_Ki  0.44
+  //#define DEFAULT_Kd 56.31 
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -555,9 +560,9 @@
   //#define DEFAULT_bedKi 1.41
   //#define DEFAULT_bedKd 1675.16
 
-  #define DEFAULT_bedKp  75.22
-  #define DEFAULT_bedKi  14.70
-  #define DEFAULT_bedKd 256.60
+  #define DEFAULT_bedKp  96.65
+  #define DEFAULT_bedKi  18.88
+  #define DEFAULT_bedKd 329.89
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
