@@ -417,7 +417,7 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
-#define TEMP_SENSOR_BED 11
+#define TEMP_SENSOR_BED 502
 #define TEMP_SENSOR_PROBE 0
 #define TEMP_SENSOR_CHAMBER 0
 #define TEMP_SENSOR_COOLER 0
@@ -553,9 +553,9 @@
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
 
-  #define DEFAULT_bedKp 31.42
-  #define DEFAULT_bedKi 1.31
-  #define DEFAULT_bedKd 501.07
+  #define DEFAULT_bedKp 31.15
+  #define DEFAULT_bedKi 1.20
+  #define DEFAULT_bedKd 537.49
 
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
@@ -802,7 +802,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100.61, 100.67, 800.07, 133 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100.58, 100.58, 800.0, 133 }
 
 /**
  * Default Max Feed Rate (mm/s)
